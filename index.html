@@ -1,0 +1,110 @@
+<div class="synth">
+  <div class="adjustments">
+    <div class="oscillator">
+      <select name="oscillator-select" id="oscillator-select" class="oscillator-select">
+        <option value="sine" selected>Sine</option>
+        <option value="square">Square</option>
+        <option value="sawtooth">Sawtooth</option>
+      </select>
+
+      <label for="oscillator__attack">
+        <span>Attack</span>
+        <input type="range" id="oscillator__attack" data-envelope-part="attack" value="1" min="0" max="1" step="0.001">
+      </label>
+      <label for="oscillator__decay">
+        <span>Decay</span>
+        <input type="range" id="oscillator__decay" data-envelope-part="decay" value="1" min="0" max="1" step="0.001">
+      </label>
+      <label for="oscillator__sustain">
+        <span>Sustain</span>
+        <input type="range" id="oscillator__sustain" data-envelope-part="sustain" value="1" min="0" max="1" step="0.001">
+      </label>
+      <label for="oscillator__release">
+        <span>Release</span>
+        <input type="range" id="oscillator__release" data-envelope-part="release" value="1" min="0" max="1" step="0.001">
+      </label>
+
+    </div>
+
+    <div class="modulation">
+      <select name="modulation-select" id="modulation-select" class="modulation-select">
+        <option value="sine">Sine</option>
+        <option value="square" selected>Square</option>
+        <option value="sawtooth">Sawtooth</option>
+      </select>
+
+      <label for="modulator__attack">
+        <span>Attack</span>
+        <input type="range" id="modulator__attack" data-envelope-part="attack" value="1" min="0" max="1" step="0.001">
+      </label>
+      <label for="modulator__decay">
+        <span>Decay</span>
+        <input type="range" id="modulator__decay" data-envelope-part="decay" value="1" min="0" max="1" step="0.001">
+      </label>
+      <label for="modulator__sustain">
+        <span>Sustain</span>
+        <input type="range" id="modulator__sustain" data-envelope-part="sustain" value="1" min="0" max="1" step="0.001">
+      </label>
+      <label for="modulator__release">
+        <span>Release</span>
+        <input type="range" id="modulator__release" data-envelope-part="release" value="1" min="0" max="1" step="0.001">
+      </label>
+    </div>
+
+    <div class="octave-selector">
+      <label for="octave" class="sr-only">Octave</label>
+      <button class="button octave-button octave-button--down" title="Octave Down" data-octave-change="-1"><span class="sr-only">Octave Down</span></button>
+      <button class="button octave-button octave-button--up" title="Octave Up" data-octave-change="1"><span class="sr-only">Octave Up</span></button>
+      <input type="number" id="octave" class="sr-onlyy" name="octave" min="1" max="7" value="4">
+    </div>
+  </div>
+  <div class="keys">
+    <button class="key keyboard-d key--note-C" data-note="C" data-keyboard-key="d">
+      <span>C</span>
+      <kbd>d</kbd>
+    </button>
+    <button class="key key--semi keyboard-r key--note-CSHARP" data-note="C#" data-keyboard-key="r">
+      <span>C#</span><kbd>r</kbd>
+    </button>
+    <button class="key keyboard-f key--note-D" data-note="D" data-keyboard-key="f">
+      <span>D</span>
+      <kbd>f</kbd>
+    </button>
+    <button class="key key--semi keyboard-t key--note-DSHARP" data-note="D#" data-keyboard-key="t">
+      <span>D#</span>
+      <kbd>t</kbd>
+    </button>
+    <button class="key keyboard-g key--note-E" data-note="E" data-keyboard-key="g">
+      <span>E</span>
+      <kbd>g</kbd>
+    </button>
+    <button class="key keyboard-h key--note-F" data-note="F" data-keyboard-key="h">
+      <span>F</span>
+      <kbd>h</kbd>
+    </button>
+    <button class="key key--semi keyboard-u key--note-FSHARP" data-note="F#" data-keyboard-key="u">
+      <span>F#</span>
+      <kbd>u</kbd>
+    </button>
+    <button class="key keyboard-j key--note-G" data-note="G" data-keyboard-key="j">
+      <span>G</span>
+      <kbd>j</kbd>
+    </button>
+    <button class="key key--semi keyboard-i key--note-GSHARP" data-note="G#" data-keyboard-key="i">
+      <span>G#</span>
+      <kbd>i</kbd>
+    </button>
+    <button class="key keyboard-k key--note-A" data-note="A" data-keyboard-key="k">
+      <span>A</span>
+      <kbd>k</kbd>
+    </button>
+    <button class="key key--semi keyboard-o key--note-ASHARP" data-note="A#" data-keyboard-key="o">
+      <span>A#</span>
+      <kbd>o</kbd>
+    </button>
+    <button class="key keyboard-l key--note-B" data-note="B" data-keyboard-key="l">
+      <span>B</span>
+      <kbd>l</kbd>
+    </button>
+  </div>
+</div>
